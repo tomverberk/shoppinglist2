@@ -1,0 +1,12 @@
+{% extends 'layout.html' %}
+
+{% block body %}
+<div class="welcome">
+<h1><strong>Welcome</strong> to our shoppinglistmaker</h1>
+<p>We're looking forward to getting help you be able to do your groceries more efficient</p>
+{% if session.logged_in == NULL %}
+  <a href="/register" class="btn btn-primary btn-lg">Register</a>
+  <a href="/login" class="btn btn-success btn-lg">Login</a>
+{% endif %}
+</div>
+{% endblock %}

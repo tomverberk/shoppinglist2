@@ -1,0 +1,33 @@
+{% extends 'layout.html' %}
+{% block body %}
+  <h1>Dashboard <small> Welcome {{session.username}} these are the products currently on your shoppinglist</small></h1>
+  <a class="btn btn-success" href="/add_product"> Add product</a>
+  <hr>
+  <table class="table table-striped">
+    <tr>
+      <th>name</th>
+      <th>quantity</th>
+      <th>price</th>
+      <th>total price</th>
+      <th></th>
+      <th></th>
+    </tr>
+    {% for product in products %}
+    {% if product.author==session['username']%}
+      <tr>
+        <td>{{product.name}}</td>
+        <td>{{product.quantity}}</td>
+        <td>{{product.ppp}}</td>
+        <td>{{product.ppp*product.quantity}}</td>
+        <td><a href="edit_product/{{product.id}}" class="btn btn-default pull-right">Edit</a></td>
+        <td>
+          <form action="{{url_for('delete_product', id=product.id)}}" method="post">
+            <input type="hidden" name="_method" value="DELETE">
+            <input type="submit" value="Delete" class="btn btn-danger">
+          </form>
+        </td>
+      </tr>
+      {% endif %}
+    {% endfor %}
+  </table>
+{% endblock %}
