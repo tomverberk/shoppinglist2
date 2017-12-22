@@ -1,0 +1,223 @@
+body {
+  background-color: #FFF;
+  margin: 0 auto;
+}
+
+header {
+  background-color: #46FF65;
+  border-bottom: 1px solid #466995;
+  position: fixed;
+  width: 100%;
+  z-index: 10;
+}
+
+ul.top{
+  margin: 30px auto;
+  padding: 0 20px;
+  text-align: center;
+  position: center;
+}
+li.top{
+  color: #FFF;
+  font-family: 'Oswald', sans-serif;
+  font-size: 20px;
+  font-weight: 300;
+  text-transform: uppercase;
+  display: inline-block;
+  width: 230px;
+  position: relative;
+  
+}
+
+
+li:hover.top {
+  color: #466995;
+  font-weight: bold;
+}
+
+h1 {
+  color: #466995;
+  font-family: 'Oswald', sans-serif;
+  font-size: 32px;
+  font-weight: 300;
+  text-transform: uppercase;
+}
+
+h2 {
+  color: #333;
+  font-family: 'Varela Round', sans-serif;
+  font-size: 26px;
+  font-weight: 100;
+  margin: 6% 2px 5px 5px
+}
+
+h3 {
+  color: #466995;
+  font-family: 'Oswald', sans-serif;
+  font-size: 18px;
+  text-align: center;
+  font-weight: 700;
+  text-transform: uppercase;
+  padding: 30px;
+}
+
+h4 {
+  color: #466995;
+  font-family: 'Oswald', sans-serif;
+  font-size: 18px;
+  font-weight: 300;
+  letter-spacing: 2px;
+  text-align: center;
+  text-transform: uppercase
+}
+
+p {
+  color: #333;
+  font-family: 'Varela Round', sans-serif;
+  font-size: 18px;
+}
+
+footer {
+  background-color: #DBE9EE;
+  text-align: center;
+  height: 100px;
+}
+
+.welcome {
+  background-color: #DBE9EE;
+  box-sizing: border-box;
+  padding: 40px;
+  text-align: center;
+  width: 100%;
+  position: relative;
+  top: 50px;
+}
+
+.List {
+text-align: center;
+  position: relative;
+  top: 35%;
+}
+
+.List h4 {
+  top: 35%;
+}
+
+.button {
+  position: relative;
+  border: 1px solid #466995;
+  margin: 20px;
+  display: inline-block;
+  height: 10%;
+  width: 30%;
+  left: 35%;
+}
+
+.button:hover {
+  background: #C0D6DF;
+  color: #FFF;
+}
+
+
+/* Include the padding and border in an element's total width and height */
+
+/* Remove margins and padding from the list */
+ul.table  {
+  position:relative;
+  margin: 2px;
+  padding: 2px;
+  width: 75%;
+  left: 12.5%;
+}
+
+/* Style the list items */
+ul li.parttable {
+  cursor: pointer;
+  position: relative;
+  padding: 12px 8px 12px 40px;
+  list-style-type: none;
+  background: #eee;
+  font-size: 18px;
+  transition: 0.2s;
+  
+  
+  /* make the list items unselectable */
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+/* Set all odd list items to a different color (zebra-stripes) */
+ul li.parttable:nth-child(odd)  {
+  background: #f9f9f9;
+}
+
+/* Darker background-color on hover */
+ul li.parttable:hover {
+  background: #ddd;
+}
+
+/* When clicked on, add a background color and strike out text */
+ul li.parttable.checked {
+  background: #888;
+  color: #fff;
+  text-decoration: line-through;
+}
+
+/* Add a "checked" mark when clicked on */
+ul li.parttable.checked::before  {
+  content: '';
+  position: absolute;
+  border-color: #fff;
+  border-style: solid;
+  border-width: 0 2px 2px 0;
+  top: 10px;
+  left: 16px;
+  transform: rotate(45deg);
+  height: 15px;
+  width: 7px;
+}
+
+/* Style the close button */
+.close {
+  position: absolute;
+  right: 0;
+  top: 0;
+  padding: 12px 16px 12px 16px;
+}
+
+.close:hover {
+  background-color: #f44336;
+  color: white;
+}
+
+
+/* Style the input */
+input {
+  position:relative;
+  border: 2px;
+  width: 75%;
+  left: 12.5%;
+  padding: 10px;
+  font-size: 16px;
+  background-color:lightgrey;
+}
+
+/* Style the "Add" button */
+MyInput{
+	border: 2px;
+	width: 75%;
+	left: 12.5%;
+}
+
+background_input{
+	position:relative
+	left:10%;
+	width:80%;
+	padding: 10px, 10px
+	background-color: grey;
+}
+
+
+
